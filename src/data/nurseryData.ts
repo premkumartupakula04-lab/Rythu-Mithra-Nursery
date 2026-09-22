@@ -144,8 +144,8 @@ export const FARMERS_LIST: FarmerItem[] = [
   { id: 'farmer-6', image: farmer6, alt: 'Farmer with HY-1191 chilli crop', locationTag: 'Field', cropStage: 'HY-1191 Crop' },
   { id: 'farmer-8', image: farmer8, alt: 'Farmer working in chilli field', locationTag: 'Field', cropStage: 'Chilli Crop' },
   { id: 'farmer-9', image: farmer9, alt: 'Farmer in a chilli field', locationTag: 'Field', cropStage: '0728 Crop' },
-  { id: 'farmer-10', image: farmer10, alt: 'Farmers at the chilli seedling nursery', locationTag: 'Nursery', cropStage: 'Seedling Nursery' },
   { id: 'farmer-group', image: farmerGroup, alt: 'Farmers and field team discussing chilli crop', locationTag: 'Field Visit', cropStage: 'Farmer Field Visit' },
+  { id: 'farmer-10', image: farmer10, alt: 'Farmers at the chilli seedling nursery', locationTag: 'Nursery', cropStage: 'Seedling Nursery' },
 ];
 
 export const GALLERY_ITEMS: GalleryItem[] = [
