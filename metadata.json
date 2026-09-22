@@ -1,0 +1,6 @@
+{
+  "name": "Rythu Mithra Nursery",
+  "description": "Rythu Mithra Nursery in Chandrapalem, Andhra Pradesh supplies quality chilli seedlings to farmers across Andhra Pradesh and Telangana.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
