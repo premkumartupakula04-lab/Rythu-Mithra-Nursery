@@ -124,7 +124,7 @@ export const VarietiesSection: React.FC<VarietiesSectionProps> = ({
         {/* Note on seed supply & booking */}
         <div className="mt-12 p-4 rounded-xl bg-emerald-50/80 border border-emerald-200/80 text-center max-w-2xl mx-auto">
           <p className="text-xs sm:text-sm text-emerald-950 font-medium">
-            Seedling booking is arranged based on seasonal sowing windows. Farmers can contact us directly for advance batch reservation and tray count planning.
+            Healthy seedlings, strong field performance, and timely farmer support make every season a better planting season. Reserve your preferred chilli variety early for the best nursery availability.
           </p>
         </div>
       </div>
