@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Phone, MessageSquare, Menu, X, Sprout } from 'lucide-react';
+import { Phone, MessageSquare, Menu, X } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/nurseryData';
+import logo from '../assets/real/logo.jpg';
 
 interface NavbarProps {
   onEnquireClick: (varietyName?: string) => void;
@@ -46,9 +47,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onEnquireClick }) => {
             id="nav-logo-link"
             className="flex items-center gap-3 group focus:outline-none"
           >
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-600 to-emerald-800 flex items-center justify-center shadow-md border border-emerald-400/30 group-hover:scale-105 transition-transform">
-              <Sprout className="w-6 h-6 text-white" />
-            </div>
+            <img
+              src={logo}
+              alt="Rythu Mithra Nursery logo"
+              className="w-10 h-10 rounded-xl object-cover shadow-md border border-emerald-400/30 group-hover:scale-105 transition-transform"
+            />
             <div className="flex flex-col">
               <span className="text-lg sm:text-xl font-extrabold tracking-tight text-white leading-none">
                 RYTHU MITHRA

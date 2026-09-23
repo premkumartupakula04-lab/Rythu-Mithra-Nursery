@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Images, Maximize2, Tag } from 'lucide-react';
-import { GALLERY_ITEMS } from '../data/nurseryData';
+import { FARMERS_LIST, GALLERY_ITEMS } from '../data/nurseryData';
 import { GalleryItem } from '../types';
 
 interface GallerySectionProps {
@@ -21,10 +21,19 @@ export const GallerySection: React.FC<GallerySectionProps> = ({
     'SEEDLINGS',
   ];
 
-  const filteredItems =
+  const filteredItems: GalleryItem[] =
     activeCategory === 'ALL'
       ? GALLERY_ITEMS
-      : GALLERY_ITEMS.filter((item) => item.category === activeCategory);
+      : activeCategory === 'FARMERS'
+        ? FARMERS_LIST.map((farmer, idx) => ({
+            id: `farmer-gallery-${farmer.id}`,
+            title: `Farmer Partner ${idx + 1}`,
+            category: 'FARMERS',
+            image: farmer.image,
+            alt: farmer.alt,
+            caption: `${farmer.cropStage} • ${farmer.locationTag}`,
+          }))
+        : GALLERY_ITEMS.filter((item) => item.category === activeCategory);
 
   return (
     <section id="gallery" className="py-20 bg-stone-100/90 border-b border-stone-200">

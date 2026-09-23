@@ -1,6 +1,7 @@
 import React from 'react';
-import { Eye, Layers, Maximize2 } from 'lucide-react';
+import { Eye, Layers, Maximize2, PlayCircle } from 'lucide-react';
 import { IMAGES } from '../data/nurseryData';
+import skValiVideo from '../assets/video/WhatsApp Video 2026-09-23 at 6.52.22 AM.mp4';
 
 interface NurserySectionProps {
   onOpenImage: (img: string, title: string) => void;
@@ -19,12 +20,6 @@ export const NurserySection: React.FC<NurserySectionProps> = ({ onOpenImage }) =
       category: 'Seedling Trays',
       image: IMAGES.nurseryTrays,
       desc: 'Systematically organized black pro-trays with uniform seedling emergence and root aeration.',
-    },
-    {
-      title: 'Healthy Young Chilli Saplings',
-      category: 'Chilli Plants',
-      image: IMAGES.ownerInspecting,
-      desc: 'Vigorous early foliage development inspected under hands-on owner supervision.',
     },
   ];
 
@@ -48,6 +43,22 @@ export const NurserySection: React.FC<NurserySectionProps> = ({ onOpenImage }) =
           <p className="mt-3 text-base sm:text-lg text-stone-600">
             Inside Rythu Mithra Nursery at Chandrapalem Mandal, Andhra Pradesh — purpose-built for healthy chilli seedling germination, irrigation, and hardening.
           </p>
+        </div>
+
+        <div className="mb-12 rounded-3xl overflow-hidden border border-emerald-800/60 bg-black shadow-2xl">
+          <div className="flex items-center gap-2 px-4 py-3 border-b border-emerald-700/60 bg-emerald-950/70 text-emerald-200 text-xs font-bold uppercase tracking-[0.2em]">
+            <PlayCircle className="w-4 h-4" />
+            <span>Mr SK Vali</span>
+          </div>
+          <video
+            controls
+            playsInline
+            preload="metadata"
+            className="w-full aspect-video object-contain bg-black"
+          >
+            <source src={skValiVideo} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
 
         {/* Clean 3-Column Gallery on Desktop */}
